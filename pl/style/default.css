@@ -1,0 +1,324 @@
+/*
+    Document   : default
+    Created on : Mar 27, 2014, 1:12:36 PM
+    Author     : Robert
+    Description: Default stylesheet for RDP LinkedIn Groups plug-in.
+*/
+
+
+@import "fontello.css";
+
+.clear{clear: both;}
+
+a.rdp-ll-loginout.rdp-ll-item.logged-in-true:after {
+    font-family: "fontello";
+    content: '\00a0\e8a1';
+    font-size: smaller;
+}
+
+a.rdp-ll-item{
+    border-radius: 0px;
+    box-sizing: content-box;
+    font: 13px/normal "Open Sans", sans-serif;
+    height: auto;
+    letter-spacing: normal;
+    margin: 0px;
+    padding: 0px;
+    position: static;
+    text-shadow: none;
+    text-transform: none;
+    transition: none 0 cubic-bezier(0.25, 0.1, 0.25, 1) 0;
+    width: auto;    
+    cursor: pointer;
+}
+
+a.rdp-ll-item>img { 
+    background: #EEEEEE;
+    border: 1px solid #888888;
+    display: inline;
+    float: none;
+    height: 26px;
+    line-height: 24px;
+    margin: -4px 6px 0px 0px;
+    padding: 0px;
+    vertical-align: middle;
+    width: 26px;
+}
+
+#rdp-ll-head a.rdp-ll-item>img{
+    margin-bottom: 3px;
+}
+
+.rdp-ll-avatar-64 { 
+height: 64px;
+left: -72px;
+position: absolute;
+top: 4px;
+width: 64px;
+}  
+#rdp-ll-sub-wrapper{
+    background-image: -webkit-linear-gradient(#f8f8f8,#eeeeee);
+    background-image: -moz-linear-gradient(#f8f8f8,#eeeeee);
+    background-image: -o-linear-gradient(#f8f8f8,#eeeeee);
+    background-image: linear-gradient(#f8f8f8,#eeeeee);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8', endColorstr='#eeeeee',GradientType=0 );
+    border-top: 1px solid #eee;
+    min-width: 100px;
+    box-sizing: content-box;
+    position: absolute;
+    left: 100px;
+    top: 150px; 
+    z-index: 9999
+}
+    
+#rdp-ll-sub-wrapper.hidden{display: none;} 
+#rdp-ll-sub-wrapper.visible{display: inline-table;}
+
+.rdp-ll-wrap{
+    padding: 0px 0px 12px;
+    margin-bottom: 8px;
+}
+#rdp-ll-sub-wrapper p{
+    color: #333;
+    margin: 0 12px 0 88px;
+    position: relative;
+    padding: 0 10px;
+    font: normal normal 400 13px/22px Arial;
+    min-width: 140px;
+    white-space: nowrap;        
+}
+
+#rdp-ll-sub-wrapper .rdp_ll_custom_menu_sep{
+    height: 2px;
+    border-top: solid 1px #E6E6E6;
+    border-bottom: solid 1px #EEEEEE;
+    margin: 0 2px;
+}
+
+#rdp-ll-sub-wrapper .rdp-ll-custom-menu-items{
+    padding-bottom: 8px;
+}
+
+#rdp-ll-sub-wrapper .rdp-ll-custom-menu-items h6{margin: 0 8px;}
+
+#rdp-ll-sub-wrapper .rdp-ll-custom-menu-items p{
+    margin: 0 8px;
+    font: normal normal 400 12px/16px Arial;
+}
+#rdp-ll-sub-wrapper p a{color: #069;font: normal normal 400 13px/26px Arial;}
+#rdp-ll-sub-wrapper .rdp-ll-custom-menu-items p a{color: #069;font: normal normal 400 12px/20px Arial;}
+#rdp-ll-sub-wrapper p a:hover{text-decoration: underline;}
+#rdp-ll-sub-wrapper p:first-of-type{
+    line-height: 32px;
+    height: auto;
+    margin-top: 6px;        
+}
+#rdp-ll-sub-wrapper .rdp-ll-custom-menu-items p:first-of-type{
+    line-height: normal;
+    margin: 0 8px;
+}
+
+#rdp-ll-main strong { 
+font-weight: 700;
+}
+#rdp-ll-main a,
+.rdp-ll-paging-controls a,
+#rdp-ll-head a{cursor: pointer;text-decoration: none;}
+
+#rdp-ll-main a:hover,
+.rdp-ll-paging-controls a:hover,
+#rdp-ll-head a:hover{cursor: pointer;text-decoration: underline;}
+
+#rdp-ll-head{margin-bottom: 0;}
+#rdp-ll-head .wrap{text-align: right;}
+#rdp-ll-head .wrap .btnLGILogin{display: inline;}
+#rdp-ll-head a:hover{text-decoration: underline;}
+.rdp-ll-head-false .wrap{text-align: right;}
+
+#rdp-ll-top-bar .rdp-ll-group.disabled{cursor: default;}
+#btnLIGDashboard.loading span{visibility: hidden;}
+#btnLIGDashboard.loading,
+#rdp-ll-main.loading{
+	display: block;
+        cursor: default;
+        height: 30px;
+	content: "\0020";
+	filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=70);
+	opacity: 0.7;
+	background-color: #fff;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url('../images/anim_loading_16x16.gif');
+	border-top: #fff;
+}
+
+#rdp-ll-usermeta-wrap{
+    display: inline;
+    float: right;
+}
+#rdp-ll-usermeta-wrap table{margin: 0;border: none;}
+#rdp-ll-usermeta-wrap table td{padding: 0;vertical-align: top;border: none;line-height: normal;}
+#rdp-ll-usermeta-wrap #tdImg{padding-right: 6px;width: 65px;}
+#rdp-ll-usermeta-wrap table td .rdp-ll-header-sign-in-link{margin-top: 10px;}
+
+
+#rdp-ll-main div.groups{margin: 0 auto;width: 474px;}
+
+#rdp-ll-main.abbreviated h3,
+#rdp-ll-main.abbreviated h4.article-title{ 
+    border: 0px none currentColor;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: 17px;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: baseline;
+}
+#rdp-ll-main.abbreviated h4.article-title{clear: none;}
+#rdp-ll-main.abbreviated a.poster{
+    margin: 0 2px 0 0;
+    float: none;
+    width: auto;    
+}
+#rdp-ll-main.abbreviated .discussion-item .entity { 
+float: left;
+margin-right: 15px;
+width: 40px;
+}
+#rdp-ll-main.abbreviated .discussion-item .discussion-content .referenced-item { 
+padding: 5px 10px 0px 0px;
+}
+#rdp-ll-main.abbreviated .discussion-item .discussion-content .referenced-item img { 
+float: left;
+margin: 5px 10px 10px 0px;
+}
+#rdp-ll-main.abbreviated .discussion-item img.groups { 
+    float: left;
+    margin-right: 20px;
+}
+#rdp-ll-main.abbreviated img.photo { 
+    border: 1px solid #E6E6E6;
+    display: block;
+    padding: 2px;
+}
+#rdp-ll-main.abbreviated .discussion-item .discussion-content { 
+    float: left;
+    margin-left: 10px;
+}
+#rdp-ll-main.abbreviated .discussion-item .discussion-content .user-contributed .discussion-title { 
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+}
+#rdp-ll-main.abbreviated [class*="content"]:after{ 
+    content: "";
+    display: block;
+    margin: 0;
+    padding: 0 0 10px;
+}
+#rdp-ll-main.abbreviated span.content-source:after{
+    margin: 0;
+    padding: 0;
+}
+#rdp-ll-main.abbreviated .item-actions { 
+    margin: 5px 0px;
+    padding: 0;
+}
+#rdp-ll-main.abbreviated div.discussion-item { 
+    border-top: 1px solid #EEEEEE;
+    clear: both;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+#rdp-ll-main .rdp-ll-group-container{
+    border-top: 1px solid #EEEEEE;
+    clear: both;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+#rdp-ll-main .rdp-ll-group-container:after { 
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+}
+#rdp-ll-main .rdp-ll-group-photo-wrap { 
+    float: left;
+    width: auto;
+    height: 50px;
+}
+#rdp-ll-main .rdp-ll-group-photo { 
+    cursor: pointer;
+}
+#rdp-ll-main .rdp-ll-group-photo-name { 
+    float: left;
+    margin-left: 10px;
+    clear: none;
+}
+#rdp-ll-main .rdp-ll-group-photo-name p{font-weight: bold;}
+#rdp-ll-top-bar.top-bar .view-group-rss {
+    display: block;
+    height: 25px;
+    width: 25px;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    border: transparent 1px;
+}
+
+#rdp-ll-top-bar.top-bar .view-group-rss span {
+    background:url("../images/rss-icon.png") no-repeat;
+    display: block;
+    border: transparent 1px;
+    margin: 0 6px ;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    text-indent: -9999px;
+    position: absolute;
+}
+
+#idpc-tooltip{display: none;}
+
+#rdp-ll-paging-message{text-align: center;font-weight: bold;}
+.rdp-ll-paging-select{width: auto;}
+.rdp-ll-paging-select-wrap{margin-left: 8px;}
+.rdp-ll-paging-container a,.rdp-ll-paging-container a:hover {cursor:pointer;font-size: 13px;}
+.rdp-ll-paging-container a.disabled,a.disabled:hover { color:gray; text-decoration: none;cursor:no-drop}
+.rdp-ll-paging-container-minimal a.disabled,
+.rdp-ll-paging-container-minimal a.disabled+span{display: none;} 
+
+.fancybox-skin {
+    border-radius: 0px 0px 4px 4px;
+    -moz-border-radius: 0px 0px 4px 4px;
+    -webkit-border-radius: 0px 0px 4px 4px;
+}
+.fancybox-close {
+    top: -36px;
+}
+.fancybox-title-outside-wrap{
+    background: #0A0A0A;
+    padding: 3px 6px;
+}
+.fancybox-title{
+    z-index: 8039;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-topleft: 4px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;  
+}
+
+img.btnRDPLLogin{
+    border: 0;
+    vertical-align: middle;
+}
